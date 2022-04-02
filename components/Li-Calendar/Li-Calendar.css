@@ -1,0 +1,149 @@
+.calendar-Time-header{
+	text-align: center;
+	line-height: 50upx;
+	vertical-align: middle;
+	padding: 20upx;
+	display: flex;
+	justify-content: center;
+}
+.calendar-TimeH{
+}
+.calendar-lastMonth{
+	width: 80rpx;
+	font-size: 35rpx;
+	margin-right: 5%;
+	padding: 0 5px;
+	text-align: center;
+}
+.calendar-nextMonth{
+	width: 80upx;
+	text-align: center;
+	margin-left: 5%;
+	font-size: 35rpx;
+	padding: 0 5px;
+}
+.calendar-backToToday{
+	text-align: right;
+	margin: 0 10rpx;
+	position: absolute;	
+	right: 30rpx;
+}
+
+.calendar-row:before,
+.calendar-row:after {
+	display: table;
+	content: ' ';
+}
+
+.calendar-row:after {
+	clear: both;
+}
+
+.calendar-col {
+	width: 14.285714%;
+	max-width: 14.285714%;
+	position: relative;
+	float: left;
+	min-height: 100rpx;
+	
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.aligncanter {
+	text-align: center;
+
+}
+
+.calendar-header {
+	color: gray;
+	height: 40rpx;
+	line-height: 60rpx;
+	vertical-align: text-top;
+	font-size: 24rpx;
+}
+
+.calendar-day {
+/* 	height: 80upx; */
+	transform: translate3d(0px, 0px, 0px) translateZ(0px); transition-duration: 0ms; transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+
+.calendar-content {
+}
+
+.calendar-date{
+}
+.calendar-today {
+	border-radius: 6upx;
+	background-color: #39b54a;
+	color:white;
+	-moz-box-shadow: 0px 2upx 10upx #ABABAB;
+	-webkit-box-shadow: 0px 2upx 10upx #ABABAB;
+	box-shadow: 0px 2upx 10upx #ABABAB;
+}
+.calendar-today .calendar-point{
+	color: white !important;
+}
+
+.calendar-today .calendar-text{
+	color: white !important;
+}
+
+.calendar-col-lastMonth .calendar-text{
+	color: #EAEAEA;
+}
+
+.calendar-col-nextMonth .calendar-text{
+	color: #EAEAEA;
+}
+
+.calendar-today .calendar-date{
+	color: white !important;
+}
+
+.calendar-active {
+	color:#01AAED;
+	background-color: #D9D9D9;
+	-moz-box-shadow: 0px 2upx 10upx #ABABAB;
+	-webkit-box-shadow: 0px 2upx 10upx #ABABAB;
+	box-shadow: 0px 2upx 10upx #ABABAB;
+}
+
+
+.calendar-col-nextMonth{
+	color:#EAEAEA;
+}
+.calendar-col-lastMonth{
+	color:#EAEAEA;
+}
+.calendar-btn-disabled{
+	color:gainsboro;
+}
+.calendar-point{
+	font-size: 20upx;top:4upx;left: 6upx;position: absolute;
+}
+.calendar-text{
+	padding: 5rpx 0;
+	width:100%;font-size: 20upx;color: #01AAED;top:40upx;left: 0px;position: absolute;overflow:hidden;
+}
+.dayValue{
+	text-align: center;
+	margin-top: 10rpx;
+}
+
+.calendar-day-6-7{
+	color: orangered;
+}
+
+/* 以下为实现0.5px底部边界 */
+.under_line{position: relative;}
+.under_line:before,
+.under_line:after{position: absolute;content: " ";height: 1px;width: 100%;left: 0;transform-origin: 0 0;-webkit-transform-origin: 0 0;}
+/* .fineLine:before{顶部top: 0;background: #000;} */
+.under_line:after{bottom: 0;border-bottom: 1px solid gainsboro;}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5){.under_line:after,.under_line:before{-webkit-transform: scaleY(.667);}}
+@media only screen and (-webkit-min-device-pixel-ratio: 2){.under_line:after,.under_line:before{-webkit-transform: scaleY(.5);}}
+/* 以上为实现0.5px底部边界 */
